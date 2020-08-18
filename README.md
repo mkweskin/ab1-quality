@@ -1,7 +1,7 @@
 # ab1-quality
 
 Reads AB1 files in the selected directory and returns: Well, Q20 length and full length.
-Q20 length in this script are the number of bases with quality of at least 20.
+In this script Q20 length is the number of bases with quality of at least 20, bases <Q20 are omitted regardless of their position in the sequence, that is, it's not just trimming from the ends, but any position.
 This script uses Tkinter for a GUI interface, see below for building as a standalone Windows .exe.
 Note: this script does not find ab1 in nested directories, only the top level of the directory provided.
 
