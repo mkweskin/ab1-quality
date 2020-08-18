@@ -5,6 +5,8 @@ Q20 length in this script are the number of bases with quality of at least 20.
 This script uses Tkinter for a GUI interface, see below for building as a standalone Windows .exe.
 Note: this script does not find ab1 in nested directories, only the top level of the directory provided.
 
+![Sample output](quality.jpg)
+
 ## Building standalone Windows version
 
 On a Windows system, install miniconda, then create this environment:
