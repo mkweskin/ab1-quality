@@ -19,7 +19,6 @@ class ScrollFrame(tk.Frame):
         screenheight =root.winfo_screenheight() - 125
         if screenheight < windowheight:
             windowheight = screenheight
-        print (windowheight)
         
         self.canvas = tk.Canvas(self, borderwidth=0, background="#ffffff", height=windowheight, width=450)          #place canvas on self
         self.viewPort = tk.Frame(self.canvas, background="#ffffff")                    #place a frame on the canvas, this frame will hold the child widgets 
