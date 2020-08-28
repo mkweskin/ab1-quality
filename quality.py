@@ -91,7 +91,10 @@ class Main(tk.Frame):
         global direct
         direct = ''
         self.dir_opt = options = {}
-        options['initialdir'] = self.config['settings'].get('initialdir', "C:\\Users")
+        try:
+            options['initialdir'] = self.config['settings'].get('initialdir', "C:\\Users")
+        except:
+            options['initialdir'] = "C:\\Users"
         options['mustexist'] = True
         options['parent'] = self.scrollFrame.viewPort
         options['title'] = 'Choose the folder with the AB1 files'
@@ -106,7 +109,10 @@ class Main(tk.Frame):
         """Reads the config files, settings.ini"""
 
         config = configparser.ConfigParser()
-        config.read('settings.ini')
+        try:
+            config.read('settings.ini')
+        except:
+            pass
         return config
 
     def processdirectory(self):
