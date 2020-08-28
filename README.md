@@ -2,9 +2,14 @@
 
 Reads AB1 files in the selected directory and returns: Well, Q20 length and full length.
 In this script Q20 length is the number of bases with quality of at least 20, bases <Q20 are omitted regardless of their position in the sequence, that is, it's not just trimming from the ends, but any position.
-This script uses Tkinter for a GUI interface, see below for building as a standalone Windows .exe.
+
 
 ![Sample output](quality.jpg)
+
+This script uses:
+- [Biopython](https://biopython.org/) to read ab1 sequence files and extract quality information
+- [tkinter](https://docs.python.org/3/library/tkinter.html) for a GUI interface
+- [pyinstaller](https://www.pyinstaller.org/) to build a standalone application (optional).
 
 ## Building standalone versions
 
